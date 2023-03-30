@@ -1,5 +1,3 @@
-from multiprocessing.connection import wait
-from colorama import Fore
 from termcolor import *
 from pypresence import *
 from sys import argv
@@ -15,8 +13,6 @@ import os
 import random
 import string
 import time
-import base64
-import multiprocessing
 import json
 import httpx
 import ctypes
