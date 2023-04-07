@@ -35,7 +35,7 @@ config = {
 
     'injection_url': "https://raw.githubusercontent.com/Ha1MRX/Discord-Injection/main/injection.js",
 
-    'kill_discord': "DEIN_DISCORD",
+    'kill_discord': False,
 
     'startup': False,
 
